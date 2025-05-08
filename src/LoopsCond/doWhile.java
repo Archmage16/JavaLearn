@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class doWhile {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int val;
-        do{
-            System.out.println("Write 10");
-            val = s.nextInt();
-        } while(val!=10);
+        try (Scanner s = new Scanner(System.in)) {
+            int val;
+            do{
+                System.out.println("Write 10");
+                val = s.nextInt();
+            } while(val!=10);
+        }
         System.out.println("You have written 10");
 
 
