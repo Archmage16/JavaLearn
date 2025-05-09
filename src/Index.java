@@ -1,5 +1,6 @@
+import Interface.House;
 public class Index {
     public static void main(String [] args){
-        System.out.println("Hello java");
+        House h2 = new House("Mangilik el 10", 10);
     }
 }
